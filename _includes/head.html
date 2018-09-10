@@ -20,4 +20,12 @@
         href="/fonts/fontawesome-free-5.2.0-web/css/brands.css">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css">
+  {% if page.title == "Gallery for Learn Enough JavaScript to Be Dangerous" %}
+    <script src="/js/gallery.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        activateGallery();
+      });
+    </script>
+  {% endif %}
 </head>
